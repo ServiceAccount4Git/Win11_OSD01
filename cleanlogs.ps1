@@ -29,7 +29,8 @@ Remove-Item C:\Windows\Setup\Scripts\*.* -Exclude *.TAG -Force | Out-Null
 #=======================================================================
 Write-Host  -ForegroundColor Green "Restarting in 20 seconds!"
 Start-Sleep -Seconds 20
-wpeutil reboot
+#wpeutil reboot
+Restart-Computer -Force
 
 Stop-Transcript
 
